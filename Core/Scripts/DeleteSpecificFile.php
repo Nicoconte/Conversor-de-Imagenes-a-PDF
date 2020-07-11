@@ -1,6 +1,6 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . "/ConverterImgToPdf/Core/Class/Image.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/ConverterImgToPdf/Core/Autoloader.php";
 
 if(!isset($_POST['action'])) return;
 

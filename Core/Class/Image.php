@@ -43,6 +43,40 @@ class Image
 		}
 
 	}
+
+	public function getImagesTag($selectedImages)
+	{
+		$images = explode(",", $selectedImages);
+		
+		$htmlTag = "";
+
+		foreach ($images as $image) {
+			$htmlTag  .= "<img src='../../Uploads/". $image ."'>";
+		}
+
+		return $htmlTag;
+	}
+
+	//Solo los nombres de las imagenes, no las imagenes con etiqueta img
+	public function getVanillaImages($selectedImages)
+	{
+		return explode(",", $selectedImages);
+	}
+
+	public function deleteAllSessionImages($imagesToDelete)
+	{
+		$filesFromDir = scandir($_SERVER['DOCUMENT_ROOT'] . "/ConverterImgToPdf/Uploads/");
+
+		foreach($imagesToDelete as $image)
+		{	
+			if(in_array($image, $filesFromDir))
+			{
+				unlink($_SERVER['DOCUMENT_ROOT'] . "/ConverterImgToPdf/Uploads/" . $image);
+			}
+		}
+			
+	}
+	
 }
 
 

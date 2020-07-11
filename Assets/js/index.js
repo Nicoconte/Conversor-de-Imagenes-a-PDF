@@ -19,7 +19,8 @@ function updatePreview(images)
 	let template = "";
 
 	images.forEach(image => {
-		templateWithImage += `<div class="preview d-flex flex-column ml-4 border" image-name=${image} style="width:15%; height:100%;">
+		templateWithImage += `
+					<div class="preview d-flex flex-column ml-4 border" image-name=${image} style="width:15%; height:100%;">
 										
 						<div class="d-flex justify-content-end align-items-center" style="width:100%; height:15%;">
 							<button class="delete-image btn bg-danger btn-sm"><i class="fa fa-times"></i></button>
@@ -117,7 +118,7 @@ function uploadImages()
 			}
 		});
 
-	})
+	});
 }
 
 
@@ -143,7 +144,7 @@ function actionPosDownload()
 		Swal.fire({
 			icon : "success",
 			text : "La descarga esta por comenzar",
-			timer : 1500
+			timer : 2500
 		})
 		setTimeout(() => {
 			updatePreview(images);
