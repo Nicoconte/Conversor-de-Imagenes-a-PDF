@@ -1,17 +1,17 @@
 <div class="panel-container">
 	
-	<div class="panel-information p-4 text-white">
+	<div class="panel-information p-4 text-white d-flex flex-column justify-content-center align-items-center">
 		<h3>1- Seleccione las imagenes que desea convertir</h1>
 		<h3>2- Descargue el PDF!</h1>
-		<p class="mt-4">Opcional: Configurar tipo de hoja y orientacion. | Si sale, perdera todo su progreso</p>
+		<p class="mt-3">Opcional: Configurar tipo de hoja y orientacion. | Si sale, perdera todo su progreso</p>
 	</div>
 
 	<div class="panel-options d-flex flex-column justify-content-center align-items-center">
 		
 		<div class="panel-upload d-flex justify-content-center flex-column justify-content-center align-items-center">
+			<p class="d-none"></p>
 			<input type="file" class="text-dark" id="file" multiple>
-			<button class="btn bg-info text-white mt-3" id="upload-image"><i class="fa fa-upload"></i> Subir imagenes</button>
-			<p class="d-none"></p>			
+			<button class="btn bg-info text-white mt-3" id="upload-image"><i class="fa fa-upload"></i> Subir imagenes</button>			
 		</div>
 		
 		<div class="panel-actions d-flex flex-row justify-content-center align-items-center mt-4">
@@ -25,7 +25,7 @@
 	
 	</div>
 
-	<div class="panel-preview border">
+	<div class="panel-preview">
 		<div class="files-preview d-flex justify-content-center align-items-center flex-row p-3">
 		</div>
 	</div>

@@ -3,10 +3,9 @@
 class Image
 {
 
-	protected $_path = null;
-	protected $_fileName = null;
-	protected $_dirTarget = null; 
-	protected $_fileAmount = null;
+	private $_path = null;
+	private $_fileName = null;
+	private $_dirTarget = null; 
 
 	public function uploadImageToServer($file)
 	{
@@ -23,7 +22,7 @@ class Image
 
 		if(move_uploaded_file($file['tmp_name'], $this->_dirTarget))
 		{
-			echo json_encode(array("name" => $this->_fileName, "success" => true, "amount" => $this->_fileAmount));
+			echo json_encode(array("name" => $this->_fileName, "success" => true));
 		}
 
 	}

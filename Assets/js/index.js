@@ -34,7 +34,11 @@ function updatePreview(images)
 		elementOnScreen++;
 	});
 
-	let alternativeTemplate = "<div class='d-flex justify-content-center align-items-center' style='width:100%;height:100%'><h4>No hay archivos!</h4><div>";
+	let alternativeTemplate = `<div class='d-flex justify-content-center align-items-center' style='width:100%;height:100%'>
+									<div class='bg-danger text-white d-flex justify-content-center align-items-center' style='width:40%;height:60%; border-radius:5px;'>
+										<h4>No hay archivos!</h4>
+									</div>
+								<div>`;
 
 	template = (elementOnScreen === 0) ? alternativeTemplate : templateWithImage;
 
