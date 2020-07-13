@@ -1,8 +1,11 @@
 # Conversor-de-Imagenes-a-PDF
 
 Conversor de imagenes a PDF: 
-1- Seleccione las fotos que quieras convertir
-2- Toque descargar y listo!
+- Seleccione las fotos que quieras convertir
+- Toque descargar y listo!
+
+
+Conversor: https://imgtopdf.000webhostapp.com/ (Preferiblemente usarlo desde una PC)
 
 Requisitos:
 - Instalar XAMPP | https://www.apachefriends.org/index.html
