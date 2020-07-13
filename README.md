@@ -5,6 +5,7 @@ Conversor de imagenes a PDF:
 2- Toque descargar y listo!
 
 Requisitos:
+- Instalar XAMPP | https://www.apachefriends.org/index.html
 - Instalar DomPdf | https://github.com/dompdf/dompdf | composer require dompdf/dompdf
 
 Funciones:
